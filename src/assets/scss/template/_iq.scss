@@ -19,6 +19,14 @@ th.columns.header__inner {
     padding-bottom: 17px;
     vertical-align: middle;
   }
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    height: 100% !important;
+
+    & th {
+      text-align: center;
+    }
+  }
 }
 
 .header__img {
