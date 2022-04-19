@@ -27,8 +27,52 @@ th.columns.header__inner {
 
 // main
 .container.main {
-  height: 118px;
   background: #ffffff;
+}
+th.columns.main__content {
+  padding-top: 40px;
+  padding-left: 42px;
+  padding-right: 38px;
+  padding-bottom: 41px;
+}
+h1.main__title {
+  margin-bottom: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+// main - merging-item
+.mergin-item__dot-img {
+  width: 39px !important;
+  padding-bottom: 0 !important;
+}
+
+.mergin-item__dashed {
+  width: 0;
+  height: 34px;
+  margin-left: 12px;
+  margin-top: -2px;
+  margin-bottom: -2px;
+  border-left: 2px dashed #f6734c;
+
+  &--inactive {
+    border-left: 2px dashed #c2c2c2;
+  }
+}
+
+.mergin-item__text {
+  width: auto !important;
+  line-height: 1.1;
+  vertical-align: top;
+  padding-top: 4px;
+  padding-bottom: 0 !important;
+}
+// main - merging-hint
+.merging-hint {
+  margin-top: 41px;
+  margin-bottom: 0;
+  padding-top: 21px;
+  border-top: 1px solid #c2c2c2;
+  line-height: 1.5;
 }
 
 // footer
