@@ -1,3 +1,4 @@
+// header
 .container.header {
   height: 118px;
   background: linear-gradient(360deg, #fe5f34 0%, #ff9879 100%);
@@ -18,4 +19,39 @@ th.columns.header__inner {
     padding-bottom: 17px;
     vertical-align: middle;
   }
+}
+
+.header__img {
+  display: inline;
+}
+
+// main
+.container.main {
+  height: 118px;
+  background: #ffffff;
+}
+
+// footer
+.container.footer {
+  height: 76px;
+  background: #fd653c;
+  border-radius: 0px 0px 40px 40px;
+}
+
+.row.footer__wrapper {
+  height: 100%;
+}
+
+th.columns.footer__inner {
+  padding-top: 24px;
+  padding-bottom: 18px;
+  padding-right: 45px;
+}
+
+.footer__inner th {
+  text-align: right;
+}
+
+.footer__img {
+  display: inline;
 }
