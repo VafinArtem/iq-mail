@@ -1,0 +1,21 @@
+.container.header {
+  height: 118px;
+  background: linear-gradient(360deg, #fe5f34 0%, #ff9879 100%);
+  border-radius: 40px 40px 0px 0px;
+}
+
+.row.header__wrapper {
+  height: 100%;
+}
+
+th.columns.header__inner {
+  padding-top: 17px;
+  padding-bottom: 0;
+  vertical-align: bottom;
+
+  &--left {
+    padding-left: 46px;
+    padding-bottom: 17px;
+    vertical-align: middle;
+  }
+}
