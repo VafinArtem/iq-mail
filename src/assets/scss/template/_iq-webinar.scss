@@ -1,0 +1,161 @@
+.container.header {
+  margin-bottom: 40px;
+}
+
+.main__mts-link {
+  margin-bottom: 10px;
+}
+
+h1.main__title {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.main__subtitle {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.main__image {
+  width: 100%;
+  height: auto;
+}
+
+.main__date {
+  text-align: right;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.main__bell-icon {
+  display: inline;
+  vertical-align: text-bottom;
+}
+
+.main__link-to-webinar {
+  display: inline-block;
+  padding: 13px 14px;
+  color: #FFF;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  border-radius: 6px;
+  background: #FD653C;
+}
+
+.main__leading-title {
+  margin-bottom: 5px;
+  color: #FD653C;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.main__leading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+th.columns.main__content {
+  padding-bottom: 22px;
+}
+
+a.main__connection-title {
+  color: #FD653C;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: underline;
+}
+
+.main__connection-info {
+  font-size: 14px;
+}
+
+.main__connection-link {
+  color: $global-font-color;
+  text-decoration: underline;
+}
+
+.mts-link {
+  border-radius: 14px;
+  background: #FFF1EA;
+
+  & .columns {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  & .columns.first {
+    padding-left: 33px;
+  }
+
+  & .columns.last {
+    padding-right: 49px;
+  }
+}
+
+.mts-link__img {
+  display: inline;
+  width: 100%;
+  height: auto;
+}
+
+.mts-link__link {
+  font-weight: inherit;
+  text-decoration: underline;
+}
+
+.mts-link__title {
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.mts-link__text {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.apps {
+  border-radius: 14px;
+  background: #FFF1EA;
+}
+
+th.columns.apps__wrap {
+  padding: 20px;
+}
+
+.apps__title {
+  margin-bottom: 14px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.apps__img {
+  display: inline;
+  margin-right: 5px;
+}
+
+th.columns.footer__inner {
+  padding: 15px 0 40px;
+}
+
+.footer__link {
+  display: block;
+  text-decoration: underline;
+}
+
+.footer__text {
+  font-size: 13px;
+  line-height: 1.4;
+}

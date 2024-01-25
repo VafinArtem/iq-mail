@@ -1,16 +1,18 @@
-import gulp     from 'gulp';
-import plugins  from 'gulp-load-plugins';
-import browser  from 'browser-sync';
-import rimraf   from 'rimraf';
-import panini   from 'panini';
-import yargs    from 'yargs';
-import lazypipe from 'lazypipe';
-import inky     from 'inky';
-import fs       from 'fs';
-import siphon   from 'siphon-media-query';
-import path     from 'path';
-import merge    from 'merge-stream';
-import beep     from 'beepbeep';
+
+const gulp     = require('gulp');
+const plugins  = require('gulp-load-plugins');
+const browser  = require('browser-sync');
+const rimraf   = require('rimraf');
+const panini   = require('panini');
+const yargs    = require('yargs');
+const lazypipe = require('lazypipe');
+const inky     = require('inky');
+const fs       = require('fs');
+const siphon   = require('siphon-media-query');
+const path     = require('path');
+const merge    = require('merge-stream');
+const beep     = require('beepbeep');
+const gulpSass = require('gulp-sass')(require('sass'));
 
 const $ = plugins();
 
@@ -73,16 +75,16 @@ function resetPages(done) {
 // Compile Sass into CSS
 function sass() {
   return gulp.src('src/assets/scss/app.scss')
-    .pipe($.if(!PRODUCTION, $.sourcemaps.init()))
-    .pipe(dartSass.sync({
-        includePaths: ['node_modules/foundation-emails/scss']
-    }).on('error', dartSass.logError))
-    .pipe($.if(PRODUCTION, $.uncss(
-      {
-        html: ['dist/**/*.html']
-      })))
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-    .pipe(gulp.dest('dist/css'));
+  .pipe($.if(!PRODUCTION, $.sourcemaps.init()))
+  .pipe(gulpSass({
+    includePaths: ['node_modules/foundation-emails/scss']
+  }).on('error', gulpSass.logError))
+  .pipe($.if(PRODUCTION, $.uncss(
+    {
+      html: ['dist/**/*.html']
+    })))
+  .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+  .pipe(gulp.dest('dist/css'));
 }
 
 // Copy and compress images
